@@ -16,7 +16,7 @@ header {
     padding: 20px 50px;
     box-shadow: 0 2px 8px #c1c1c1;
    position: sticky;
-   width: 100%;
+   width: 100vw;
 }
 
 h1{
