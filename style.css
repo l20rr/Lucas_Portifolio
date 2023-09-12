@@ -146,13 +146,8 @@ justify-content: center;
  
 }
 
-#a{
-  background: url("./assets/home.jpg") no-repeat  center center;
-  background-size: 245px 140px;
-}
-
 #b{
-  background: url("./assets/calc.jpg") no-repeat  center center;
+  background: url("./assets/POC3.jpg") no-repeat  center center;
   background-size: 145px 135px;
 }
 #c{
@@ -164,13 +159,10 @@ justify-content: center;
   background-size: cover;
 }
 #e{
-  background: url("./assets/FormularioReact.jpg") no-repeat  center center;
+  background: url("./assets/todo_b.jpg") no-repeat  center center;
   background-size: 145px 135px;
 }
-#f{
-  background: url("./assets/formReact2.jpg") no-repeat  center center;
-  background-size: 145px 135px;
-}
+
 #g{
   background: url("./assets/Cartaz.jpg") no-repeat  center center;
   background-size: 250px 140px;
@@ -184,7 +176,7 @@ justify-content: center;
   background-size: cover;
 }
 #j{
-  background: url("./assets/AppTemp.jpg") no-repeat  center center;
+  background: url("./assets/cond.jpg") no-repeat  center center;
   background-size: 145px 135px;
 }
 #k{
@@ -193,7 +185,7 @@ justify-content: center;
 }
 
 #l{
-  background: url("./assets/PY1.jpg") no-repeat  center center;
+  background: url("./assets/poc1.jpg") no-repeat  center center;
   background-size: cover;
 }
 
@@ -209,6 +201,11 @@ justify-content: center;
 
 #o{
   background: url("./assets/PY2.jpg") no-repeat  center center;
+  background-size: cover;
+}
+
+#p{
+  background: url("./assets/projfinal.jpg") no-repeat  center center;
   background-size: cover;
 }
 
