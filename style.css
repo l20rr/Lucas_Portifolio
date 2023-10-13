@@ -406,12 +406,12 @@ font-size: 0.9rem;
 
 
 aside{
-   margin: 150px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 500px;
+
   height: auto;
 }
 .wrapper{
@@ -423,7 +423,7 @@ aside{
 .box {
     
   height: 200px;
- width: 350px;
+ width: auto;
 
 }
 }
@@ -480,14 +480,15 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 50px;
+    min-width: 100px;
     height: auto;
+   
   }
   .wrapper{
-  
+
     height: auto;
       width: 250px;
- 
+
   }
 
   .box {
