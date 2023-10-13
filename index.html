@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-     <script src="./index.js" defer></script>
+     
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 
 
@@ -18,66 +18,71 @@
      
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
      <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
- 
+     <script src="./index.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h2 id="nav-title">Lucas Santos</h2>
         <nav>
+          <h2>Lucas Santos</h2>
             <ul>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Skills">Skills</a></li>
+               
                 <a href="https://github.com/l20rr"target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/lucas-santos-58b780181/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="mailto:lucas20@gmail.com?Subject=Novo Desafio"><i class="fa-solid fa-envelope"></i></a> </p>
+           
             </ul>
         </nav>
+        
     </header>
-    <h1>Profile</h1>
+  
     <main>
         
-        <div id="img-profile">
-            <img src="./assets/L1-removebg-preview.png" alt="" srcset="">
+      <div id="img-profile">
+        <div id="img-info">
+          <h1 class="dev">I am <span id="devText">Developer</span></h1><br/>
+          <p>
+            Desenvolvedor Full Stack Web <br />
+            JavaScript Developer<br />
+            C# Developer
+          </p>
+          <a href="./LucasSantos.pdf" download="LucasSantos"><button>Download my CV</button></a>
         </div>
+        <img src="./assets/L1-removebg-preview.png" alt="" srcset="">
+      </div>
         <div id="about">
-            <h2> Developer</h2>
-            
+            <h1> About</h1>
+            <hr/>
             <p>
               I have completed a Higher Technical Specialization Course (CET) in Information Systems Programming, Level 5. <br/>
               <br/>
               During my internship at WIG - Work is Good, I gained valuable experience in software development. I learned to work with technologies such as .NET Core and Blazor, implemented unit tests, and conducted deployments on Azure. I collaborated effectively within a team using GitHub and had the opportunity to plan and develop three complete Proof of Concepts in full-stack Blazor projects.
               <br/>
               <br/>
+              I believe that a developer should not limit themselves to just writing code but should understand the entire process and actively seek solutions. I value innovation and creativity in my development work. My goal is to deliver high-value solutions to clients with an excellent user experience.
+              <br/>
               Creative, self-motivated, and inquisitive, these are my key traits that have enabled me to develop skills with JavaScript and C# technologies.
             </p>
-            <a href="./LucasSantos.pdf" download="LucasSantos" ><button>Download my CV</button></a>
-        </div>
+            </div>
     </main>
 
-    <h1  id="Projects">Projects</h1>
- 
-    <aside>   
+  
+    <aside> 
+      <h1  id="Projects">Projects</h1>  
         <div class="wrapper">
           <div class="box " id="o" onclick="mostrarTexto('Course','CET project, where the trainer started the project and we had parts that we worked on as a group and individually to proceed. The project is a course sales site, who enters without registering can see the price but cannot make any purchases. Account creation and data update if necessary. private and non-private routes for different users. Technology used: Python SQL.', './assets/PY2', 'Curso_PY' )"></div>
           <div class="box " id="p" onclick="mostrarTexto('Car sales','he Car Sales Project was the final project of my course. I developed a used car sales platform as part of a team. I received a score of 18/20 for it. The platform allows users to create accounts, post vehicle sale listings, favorite listings for later viewing, offers both paid and free listing options, and even features a chat function for communication with the sellers. Additionally, there´s a desktop app for managing external listings. ReactJS SQL MongoDB NodeJS', './assets/projfinal', 'Carsales_ProjFinal' )"></div>
           <div class="box " id="g" onclick="mostrarTexto('Movie poster','Project where I made a movie poster. With ReactJS and Axios I consumed a movies api. I made this project to work with the manipulation of a list and an external api.', './assets/Cartaz', 'Cartaz_Cinema' )"></div>
           <div class="box " id="k" onclick="mostrarTexto('Simple ERP','Management system for small businesses. Complete project with frontend backend and database, a complete CRUD for users and products.It also has a section to find out how many products were sold and details of each profit. finally, a dashboard where it shows how many euros of revenue, profit the company has in general and individually with each product. Technologies used: ReactJS Node MongoDB.', './assets/empresa', 'ERPsistema' )"></div>
           <div class="box " id="l" onclick="mostrarTexto('App PocBank','The Bank Project is a proof of concept (POC) for a website that allows users to track real-time data of American fund stocks. With the ability to save information about stocks, the system also provides data filtering functionalities. I created it during my internship, and the technologies used were Blazor, C# .Net, and the AlphaVantage API.', './assets/poc1', 'Bank' )"></div>
-          <div class="box " id="j" onclick="mostrarTexto('Payment control system','I developed this system to assist the administrators of the building where I live in managing the payment of construction fees and condo dues. The system includes automated email notifications with the invoice and the exact amount. After a certain period of time (X), the system adds a fee to each condo owner and updates the table accordingly. It has been integrated with Firebase, so the data is stored in the database, allowing for editing, deleting, or adding more information', './assets/condomínioE', 'Firebase_Project' )"></div>
-          
+          <div class="box " id="d" onclick="mostrarTexto('Weather  app','An app that shows you how the weather is, I introduced 2 external apis to show the flag and an img of the city. Modern UX UI. Technologies used: ReactJS APIs' , './assets/met_app', 'AppWeather' )"></div>
+    
           <div class="box " id="h" onclick="mostrarTexto('Chat','Develop a chat with soket.io and node js. the study was to learn how to use this library. the site displays the name of the user who entered the room, the message sent and who sent it.', './assets/Chat', 'ChatJS' )"></div>
-            
-          <div class="box " id="e" onclick="mostrarTexto('TodoList_blazor','A simple to-do list where I can add, remove, and mark tasks as completed. It operates using local storage and I created this project for study purposes, but I found it useful as it displays task completion percentage and aids in overall organization. Blazor', './assets/todo_b', 'TodoList_blazor' )"></div>
+         
           <div class="box " id="b" onclick="mostrarTexto('POC Report','A feature for submitting general feedback about the website or reporting a specific bug. This was a project I worked on during my internship, where we had complete freedom to manage both the project itself and its design. Blazor C# .NET', './assets/POC3', 'POC_Rport' )"></div>
-          <div class="box " id="n" onclick="mostrarTexto('Note project','Creation of a wall. the wall is made up of posts that have a title and description. Design to work HTTP methods like get and post. the posts are saved on the local page by localStorage and while the server is active.Technologies: Bootstrap and NodeJS.', './assets/Mural', 'Memorias' )"></div>
-        <div class="box " id="m" onclick="mostrarTexto('Pokémon API','API Consumption Project. The project involves retrieving the name of a Pokémon and displaying information about it on the screen. Technologies used: ReactJS and CSS.', './assets/Poke', 'PokeAPI' )"></div>
         
            <div class="box " id="i" onclick="mostrarTexto('Landing page','Landing page to show services, prices and lead capture for a company. this landing page was focused more on CSS design and effects. technologies used: HTML CSS JS.', './assets/LP', 'landingPage' )"></div>
-           <div class="box " id="c" onclick="mostrarTexto('Tic tac toe','Creation of the tic tac toe game. array manipulation and game logic implemented in javascript. technologies used: HTML CSS JS', './assets/jogo', 'Jogo-do-galo-velha-' )"></div>
-           <div class="box " id="d" onclick="mostrarTexto('Nintendo Switch','Clone of a Nintendo video game. Made almost 100% by CSS3, with a screen that works and with buttons that have different functions. technologies used: HTML CSS JS', './assets/zelda', 'Nintendo' )"></div>
-          
          
-            
           </div>
      </aside>
   
@@ -98,35 +103,82 @@
   </div>
     <div class="tech">
         <h1>Skills</h1>
-        <div class="carousel">
-            <div class="icons" id="Skills">
-              <div class="icon">
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-node-js"></i>
-                <i class="fa-brands fa-react"></i>
-              
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-bootstrap"></i>
-               
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-python"></i>
-                <i class="fa-brands fa-microsoft"></i>
-                <i class="fa-solid fa-database"></i>
-              
-              </div>
-            </div>
-           
-            <div class="nav-buttons">
-              <button class="prev-button">&lt;</button>
-              <button class="next-button">&gt;</button>
-            </div>
+        <div class="icons" >
+          <div class="icon">
+            <i class="fa-brands fa-js"></i>
           </div>
-    </div>
+          <div class="icon">
+            <i class="fa-brands fa-node-js"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-brands fa-react"></i>
+          </div>
+      </div>
 
+
+
+      <div class="icons" >
+          <div class="icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+            <div class="icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+            <div class="icon">
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
+      </div>  
+
+
+
+        <div class="icons" >
+          <div class="icon">
+            <i class="fa-brands fa-python"></i>
+          </div>
+            <div class="icon">
+            <i class="fa-brands fa-microsoft"></i>
+          </div>
+            <div class="icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+        </div>
+    </div>
+    <script>
+      const devSpan = document.getElementById("devText");
+      const words = ["Developer", "Inovation", "Future", "Solution"];
+      let wordIndex = 0;
+      let letterIndex = 0;
+      let isDeleting = false;
+    
+      function typeEffect() {
+        const speed = 500; 
+    
+        const word = words[wordIndex];
+    
+        if (!isDeleting && letterIndex <= word.length) {
+          devSpan.textContent = word.substring(0, letterIndex);
+          letterIndex++;
+        } else if (isDeleting && letterIndex >= 0) {
+          devSpan.textContent = word.substring(0, letterIndex);
+          letterIndex--;
+        }
+    
+        if (letterIndex === word.length) {
+          isDeleting = true;
+        }
+    
+        if (letterIndex === 0 && isDeleting) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length; 
+        }
+    
+        setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+      }
+    
+      typeEffect(); 
+    </script>
+    
+    
     
 </body>
 </html>
