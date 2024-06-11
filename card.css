@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#cards-container {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    align-items: center;
+    width: 95%;
+    margin:0 auto; /* Centraliza o container horizontalmente */
+  
+   
+}
+
+.card {
+    margin: 5px;
+    box-sizing: border-box;
+    width: 40%;
+    height: 60%;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;
+    background-size: cover; /* Faz com que a imagem cubra todo o elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.card > span {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.851);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+    border: 0;
+
+}
+
+.card:hover > span {
+    display: flex;
+    border: 0;
+    outline: 2px solid whitesmoke; /* Use uma borda de contorno para preservar o layout */
+    animation: growBorder 0.5s forwards; /* Aplica a animação ao passar o mouse */
+}
+
+@keyframes growBorder {
+    0% {
+        transform: scale(0); /* Inicia sem escala */
+    }
+    100% {
+        transform: scale(1); /* Escala completa */
+    }
+}
+
+.ft1{
+    background-image: url("./assets/Cartaz.jpg");
+    
+}
+.ft2{
+    background-image: url("./assets/Chat.jpg");
+}
+.ft3{
+    background-image: url("./assets/met_app.jpg");
+}
+.ft4{
+    background-image: url("./assets/poc1.jpg");
+}
+.ft5{
+    background-image: url("./assets/empresa.jpg");
+}
+.ft6{
+    background-image: url("./assets/LP.jpg");
+}
+.ft7{
+    background-image: url("./assets/POC3.jpg");
+}
+.ft8{
+    background-image: url("./assets/projfinal.jpg");
+}
+
+.ft9{
+    background-image: url("./assets/PY2.jpg");
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    
+}
+
+
+.page3{
+    display: flex;
+    flex-direction: column;
+}
+
+.page3 > a {
+    color: white;
+    font-style: none;
+    font-size: 30px;
+    margin-left: 80%;
+    cursor: pointer;
+  }
+
+  
+  @media (max-width: 900px)  {
+    .card {
+        margin: 15px;
+      
+        width: 70%;
+        height: 60%;
+        
+    }
+    
+    .card > span {
+
+        font-size: 0.8rem;
+    
+    }
+}

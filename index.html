@@ -4,181 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
     <link rel="stylesheet" href="./style.css">
-     
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-
-
-     <script href="
-     https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
-     <script href="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
-
-     <script href=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js" defer></script>
-    
-     
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
-     <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
-     <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./info.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./card.css">
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js" defer></script>
+  
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .page {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: 100vh; /* Initially place all pages below the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: top 1s;
+        }
+        .page1 { background-color: rgba(255, 255, 255, 0); top: 0; } /* Page 1 starts in the viewport */
+        .page2 { background-color:rgba(255, 255, 255, 0) }
+       
+    </style>
 </head>
-
 <body>
     <header>
         <nav>
-          <h2>Lucas Santos</h2>
+            <h2>LRS</h2>
             <ul>
-               
-                <a href="https://github.com/l20rr"target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/l20rr" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/lucas-santos-58b780181/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:lucas20@gmail.com?Subject=Novo Desafio"><i class="fa-solid fa-envelope"></i></a> </p>
-           
+                <a href="mailto:lucas20@gmail.com?Subject=Novo Desafio"><i class="fa-solid fa-envelope"></i></a>
             </ul>
         </nav>
-        
     </header>
   
-    <main>
-        
-      <div id="img-profile">
-        <div id="img-info">
-          <h1 class="dev">I am <span id="devText">Developer</span></h1><br/>
-          <p>
-            Full Stack Web  Desenvolvedor  <br />
-            JavaScript Developer<br />
-            C# Developer
-          </p>
-          <a href="./LucasSantos.pdf" download="LucasSantos"><button>Download my CV</button></a>
+    <main class="page page1 animate__animated">
+        <div id="header">
+           <h1>Lucas Santos</h1>
+            <h3> Full Stack; Web Developer; JavaScript Developer; C# Developer; <br/></h3>
+            <h3>Passionate about innovation and learning!</h3>
+            <a href="./LucasSantos.pdf" download="LucasSantos"><button class="button-30" role="button">Download my CV</button></a>
         </div>
-        <img src="./assets/L1-removebg-preview.png" alt="" srcset="">
-      </div>
-        <div id="about">
-            <h1> About</h1>
-            <hr/>
-            <p>
-              I have completed a Higher Technical Specialization Course (CET) in Information Systems Programming, Level 5. <br/>
-              <br/>
-              During my internship at WIG - Work is Good, I gained valuable experience in software development. I learned to work with technologies such as .NET Core and Blazor, implemented unit tests, and conducted deployments on Azure. I collaborated effectively within a team using GitHub and had the opportunity to plan and develop three complete Proof of Concepts in full-stack Blazor projects.
-              <br/>
-              <br/>
-              I believe that a developer should not limit themselves to just writing code but should understand the entire process and actively seek solutions. I value innovation and creativity in my development work. My goal is to deliver high-value solutions to clients with an excellent user experience.
-              <br/>
-              Creative, self-motivated, and inquisitive, these are my key traits that have enabled me to develop skills with JavaScript and C# technologies.
-            </p>
+        <div id="information">
+            <div class="information grid">
+                <div class="icon">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-node-js"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-microsoft"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
             </div>
+            <div class="information proj">
+                <h2>About me</h2>
+            </div>
+            <div class="information proj">
+                <h2>Projects</h2>
+             
+            </div>
+          
+        </div>
+        <a id="nextPageArrow"><i class="fa-solid fa-arrow-alt-circle-right"></i></a>
+
     </main>
 
-  
-    <aside> 
-      <h1  id="Projects">Projects</h1>  
-        <div class="wrapper">
-          <div class="box " id="o" onclick="mostrarTexto('Course','CET project, where the trainer started the project and we had parts that we worked on as a group and individually to proceed. The project is a course sales site, who enters without registering can see the price but cannot make any purchases. Account creation and data update if necessary. private and non-private routes for different users. Technology used: Python SQL.', './assets/PY2', 'Curso_PY' )"></div>
-          <div class="box " id="p" onclick="mostrarTexto('Car sales','he Car Sales Project was the final project of my course. I developed a used car sales platform as part of a team. I received a score of 18/20 for it. The platform allows users to create accounts, post vehicle sale listings, favorite listings for later viewing, offers both paid and free listing options, and even features a chat function for communication with the sellers. Additionally, there´s a desktop app for managing external listings. ReactJS SQL MongoDB NodeJS', './assets/projfinal', 'Carsales_ProjFinal' )"></div>
-          <div class="box " id="g" onclick="mostrarTexto('Movie poster','Project where I made a movie poster. With ReactJS and Axios I consumed a movies api. I made this project to work with the manipulation of a list and an external api.', './assets/Cartaz', 'Cartaz_Cinema' )"></div>
-          <div class="box " id="k" onclick="mostrarTexto('Simple ERP','Management system for small businesses. Complete project with frontend backend and database, a complete CRUD for users and products.It also has a section to find out how many products were sold and details of each profit. finally, a dashboard where it shows how many euros of revenue, profit the company has in general and individually with each product. Technologies used: ReactJS Node MongoDB.', './assets/empresa', 'ERPsistema' )"></div>
-          <div class="box " id="l" onclick="mostrarTexto('App PocBank','The Bank Project is a proof of concept (POC) for a website that allows users to track real-time data of American fund stocks. With the ability to save information about stocks, the system also provides data filtering functionalities. I created it during my internship, and the technologies used were Blazor, C# .Net, and the AlphaVantage API.', './assets/poc1', 'Bank' )"></div>
-          <div class="box " id="d" onclick="mostrarTexto('Weather  app','An app that shows you how the weather is, I introduced 2 external apis to show the flag and an img of the city. Modern UX UI. Technologies used: ReactJS APIs' , './assets/met_app', 'AppWeather' )"></div>
-    
-          <div class="box " id="h" onclick="mostrarTexto('Chat','Develop a chat with soket.io and node js. the study was to learn how to use this library. the site displays the name of the user who entered the room, the message sent and who sent it.', './assets/Chat', 'ChatJS' )"></div>
-         
-          <div class="box " id="b" onclick="mostrarTexto('POC Report','A feature for submitting general feedback about the website or reporting a specific bug. This was a project I worked on during my internship, where we had complete freedom to manage both the project itself and its design. Blazor C# .NET', './assets/POC3', 'POC_Rport' )"></div>
-        
-           <div class="box " id="i" onclick="mostrarTexto('Landing page','Landing page to show services, prices and lead capture for a company. this landing page was focused more on CSS design and effects. technologies used: HTML CSS JS.', './assets/LP', 'landingPage' )"></div>
-         
-          </div>
-     </aside>
-  
-     <div id="gameover">
-      <button id="restart" onclick="restart()">X</button>
-      <div id="conteudo">
-          <img  alt="Imagem 1">
-          
-          <div id="blox">
-            <h4 id="title"></h4>
-            <div id="texto">
-            </div>
-            <a style="color: black;" id="links" target="_blank">Link to Code</a>
-          </div>
+    <section class="page page2 animate__animated">
+        <img src="./assets/LucasLondon.jpeg" alt="" srcset="">
+        <div id="about">
+            <h1>About</h1>
+            <hr/>
+            <p>
+                I have completed a Higher Technical Specialization Course (CET) in Information Systems Programming, Level 5. 
+                During my internship at WIG - Work is Good, I gained valuable experience in software development. I learned to work with technologies such as .NET Core and Blazor, implemented unit tests, and conducted deployments on Azure. I collaborated effectively within a team using GitHub and had the opportunity to plan and develop three complete Proof of Concepts in full-stack Blazor projects.
+                
+                I believe that a developer should not limit themselves to just writing code but should understand the entire process and actively seek solutions. I value innovation and creativity in my development work. My goal is to deliver high-value solutions to clients with an excellent user experience.
+                
+                Creative, self-motivated, and inquisitive, these are my key traits that have enabled me to develop skills with JavaScript and C# technologies.
+                <br/>
+                <br/>
+                I went to Oxford to improve my English and experience different cultures.
+
+                I had the opportunity to immerse myself in various cultural environments and converse with people from diverse backgrounds.
+                
+                I met individuals from Spain, England, Mexico, Colombia, France, Poland, the Netherlands, Brazil, Italy, Chile, Japan and Portugal. Each of these countries has a wonderful culture, offering me a new perspective on the world. I made friends with people of incredible nationalities.
+                
+                This experience significantly enhanced my skills, especially my social skills. I became better at solving problems, speaking different languages, explaining technologies, and being a good listener.
+                
+                Now, as I return home to Portugal, I bring with me a new version of myself and new dreams.
+                My objective has been achieved.
+
+                
+            </p>
+            <a id="nextPageArrow"><i class="fa-solid fa-arrow-alt-circle-right"></i></a>
         </div>
-      
      
-  </div>
-    <div class="tech">
-        <h1>Skills</h1>
-        <div class="icons" >
-          <div class="icon">
-            <i class="fa-brands fa-js"></i>
+    </section>
+   
+    <div class="page page3 animate__animated">
+      <section id="cards-container">
+          <div class="card ft1">
+              <span>Project where I made a movie poster. With ReactJS and Axios I consumed a movies api. I made this project to work with the manipulation of a list and an external api.</span>
           </div>
-          <div class="icon">
-            <i class="fa-brands fa-node-js"></i>
+          <div class="card ft2">
+              <span>Develop a chat with soket.io and node js. the study was to learn how to use this library. the site displays the name of the user who entered the room, the message sent and who sent it.</span>
           </div>
-          <div class="icon">
-            <i class="fa-brands fa-react"></i>
+          <div class="card ft3">
+              <span>An app that shows you how the weather is, I introduced 2 external apis to show the flag and an img of the city. Modern UX UI. Technologies used: ReactJS APIs</span>
           </div>
+          <div class="card ft4">
+              <span>The Bank Project is a proof of concept (POC) for a website that allows users to track real-time data of American fund stocks. With the ability to save information about stocks, the system also provides data filtering functionalities. I created it during my internship, and the technologies used were Blazor, C# .Net, and the AlphaVantage API.</span>
+          </div>
+          <div class="card ft5">
+             <span>Management system for small businesses. Complete project with frontend backend and database, a complete CRUD for users and products.It also has a section to find out how many products were sold and details of each profit. finally, a dashboard where it shows how many euros of revenue, profit the company has in general and individually with each product. Technologies used: ReactJS Node MongoDB.</span>
+          </div>
+          <div class="card ft6">
+              <span>Landing page to show services, prices and lead capture for a company. this landing page was focused more on CSS design and effects. technologies used: HTML CSS JS.</span>
+          </div>
+          <div class="card ft7">
+              <span>A feature for submitting general feedback about the website or reporting a specific bug. This was a project I worked on during my internship, where we had complete freedom to manage both the project itself and its design. Blazor C# .NET</span>
+          </div>
+          <div class="card ft8">
+              <span>Car Sales Project was the final project of my course. I developed a used car sales platform as part of a team. I received a score of 18/20 for it. The platform allows users to create accounts, post vehicle sale listings, favorite listings for later viewing, offers both paid and free listing options, and even features a chat function for communication with the sellers. Additionally, there´s a desktop app for managing external listings. ReactJS SQL MongoDB NodeJS</span>
+          </div>
+          <div class="card ft9">
+             <span>CET project, where the trainer started the project and we had parts that we worked on as a group and individually to proceed. The project is a course sales site, who enters without registering can see the price but cannot make any purchases. Account creation and data update if necessary. private and non-private routes for different users. Technology used: Python SQL.</span>
+          </div>
+      </section>
+      <div class="pagination">
+          <button onclick="showCardPage(1)">1</button>
+          <button onclick="showCardPage(2)">2</button>
+          <button onclick="showCardPage(3)">3</button>
       </div>
+      <a id="nextPageArrow"><i class="fa-solid fa-arrow-alt-circle-right"></i></a>
+  </div>
+  
 
-
-
-      <div class="icons" >
-          <div class="icon">
-            <i class="fa-brands fa-html5"></i>
-          </div>
-            <div class="icon">
-            <i class="fa-brands fa-css3-alt"></i>
-          </div>
-            <div class="icon">
-            <i class="fa-brands fa-bootstrap"></i>
-          </div>
-      </div>  
-
-
-
-        <div class="icons" >
-          <div class="icon">
-            <i class="fa-brands fa-python"></i>
-          </div>
-            <div class="icon">
-            <i class="fa-brands fa-microsoft"></i>
-          </div>
-            <div class="icon">
-            <i class="fa-solid fa-database"></i>
-          </div>
-        </div>
-    </div>
-    <script>
-      const devSpan = document.getElementById("devText");
-      const words = ["Developer", "Inovation", "Future", "Solution"];
-      let wordIndex = 0;
-      let letterIndex = 0;
-      let isDeleting = false;
-    
-      function typeEffect() {
-        const speed = 500; 
-    
-        const word = words[wordIndex];
-    
-        if (!isDeleting && letterIndex <= word.length) {
-          devSpan.textContent = word.substring(0, letterIndex);
-          letterIndex++;
-        } else if (isDeleting && letterIndex >= 0) {
-          devSpan.textContent = word.substring(0, letterIndex);
-          letterIndex--;
-        }
-    
-        if (letterIndex === word.length) {
-          isDeleting = true;
-        }
-    
-        if (letterIndex === 0 && isDeleting) {
-          isDeleting = false;
-          wordIndex = (wordIndex + 1) % words.length; 
-        }
-    
-        setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
-      }
-    
-      typeEffect(); 
-    </script>
-    
-    
-    
+  <script src="./scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,88 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o texto */
+    margin: 20px; /* Espaço ao redor da seção */
+   
+  }
+  
+  section img {
+    max-width: 400px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 70vh;
+  }
+  
+  #about {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%; /* Largura máxima da seção de texto */
+    /* Alterar a família de fontes */
+    padding: 20px;
+   
+  }
+  
+  #about h1 {
+    margin: 0;
+    font-size: 2em; /* Tamanho da fonte do título */
+    color: whitesmoke; /* Cor do título */
+  }
+  
+  #about hr {
+    width: 30%;
+    border: 1px solid #ffffff; /* Estilize a linha horizontal conforme necessário */
+    margin: 0 0 10px 0; /* Ajuste a margem para posicionar a linha horizontal corretamente */
+  }
+  
+  #about p {
+    margin-top: 10px; /* Espaçamento entre o parágrafo e a linha horizontal */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    font-size: 1.1rem;
+    color:whitesmoke; /* Cor do texto */
+  
+  }
+  #about > a {
+    color: white;
+    font-style: none;
+    font-size: 30px;
+    margin-left: 100%;
+    cursor: pointer;
+  }
+ 
+@media (max-width: 900px) {
+    section {
+        flex-direction: column;
+        gap: 10px; /* Reduce space between image and text */
+        margin: 10px; /* Reduce space around the section */
+
+    }
+
+    section img {
+        display: none;
+    }
+
+    #about {
+        max-width: 90%; /* Allow text section to take the full width available */
+        padding: 10px; /* Reduce padding to save space */
+    }
+
+    #about h1 {
+        margin-top: 80px;
+        font-size: 1.0em; /* Reduce title font size */
+    }
+
+    #about hr {
+        width: 50%; /* Adjust width of horizontal line */
+    }
+
+    #about p {
+        font-size: 0.8rem; /* Adjust text font size */
+    }
+
+    #about > a {
+        color: white;
+    font-style: none;
+    font-size: 30px;
+    margin-left: 80%;
+    cursor: pointer;
+    }
+}
